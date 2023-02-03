@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Poppins',sans-serif;
+}
+body{
+    margin: 15px;
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQi9zyolhQBn0EQvD097GtLhB2mcS6GhM3wT98vBSTYjbLub3cv9ArylrM3k6FXLCHCFc&usqp=CAU');
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 100%;
+    height: auto;
+    /* background: #00539cff; */
+    background-color: rgb(245, 247, 248);
+    border: 3px solid black;
+    border-radius: 50px;
+    width: auto;
+    
+}
+
+.cont{
+    position: relative;
+    height: auto;
+    padding: 10px;
+    margin: 0 auto;
+}
+.heading{
+    height: auto;
+    width: 100%;
+    color: rgb(10, 9, 9);
+    text-align: center;
+    margin-top: 26px;
+    font-size: 51px;
+    font-family: 'Tangerine', cursive;    
+}
+.addTask{
+        width: 61%;
+    display: flex;
+    padding: 65px 0;
+    margin: auto;
+    position: relative;
+    top: 46%;
+}
+.addTask > input[type="text"]{
+    width: 90%;
+    color: rgb(14, 12, 12);
+    border: none;
+    border-bottom: 2px solid #666;
+    background: none;
+    padding: 10px;
+    font-size: 22px;
+    outline: none;
+}
+.addTask button{
+    margin: 0 10px;
+    background: #e93939;
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding: 10px;
+    border:none;
+    outline: none;
+    margin-left: 23px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.t_b{
+    width: 100%;
+    height:auto;
+    padding: 3%;
+    position: relative;
+}
+.notComp, .Comp{
+    margin: 5px 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+}
+ol{
+    list-style: none;
+    counter-reset: my-counter;
+}
+ol li{
+
+    padding: 18px;
+    font-size: 22px;
+    position: relative;
+    width: 280px;
+    height:200px;
+    margin:30px;
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+    border-radius: 15px;
+    background: linear-gradient(135deg, rgb(252, 8, 8) 0%, rgb( 70 15 15) 90%);
+    overflow: hidden;
+    align-items: center;
+    border-top:1px solid rgba(255,255,255,0.5);
+    border-left: 1px solid rgba(255,255,255,0.5);
+   
+
+}
+ol.Comp li{
+   
+    background: linear-gradient(135deg, rgb(0 54 24 / 59%) 0%, rgb(16 225 113) 90%);
+
+}
+
+ol li::before{
+    content: counter(my-counter);
+    line-height: 4rem;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    top: 50px;
+    left:15px;
+    font-size:7em;
+    color:rgba(255,255,255,0.05);
+    pointer-events:none;
+}
+li button{
+    float: right;
+    padding: 5px;
+    font-size: 28px;
+    line-height: 28px;
+    margin-right: 15px;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+
+  
+
+.chk_btn{
+    position: absolute;
+    bottom: 35px;
+    left: 25%;
+}
+.dlt_btn{
+    position: absolute;
+    bottom: 35px;
+    right: 25%;
+}
+.dlt_btn2{
+    position: absolute;
+    bottom: 35px;
+    right: 50%;
+}
